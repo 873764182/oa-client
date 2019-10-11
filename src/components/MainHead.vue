@@ -23,7 +23,7 @@
       <el-col :span="12" class="head-right">
         <div v-show="!searchViewShow">
           <img src="../assets/search.svg" @click="searchViewShow = !searchViewShow" title="搜索"
-               style="display: inline-block; width: 30px; height: 30px; margin: 6px 0; padding: 4px; cursor: pointer;"/>
+               style="display: inline-block; width: 25px; height: 25px; margin: 8px 0; padding: 4px; cursor: pointer;"/>
         </div>
         <div v-show="searchViewShow">
           <el-popover
@@ -46,14 +46,13 @@
                  ref="searchView"
                  autofocus/>
         </div>
-        <div style="width: 40px">
+        <div>
           <img src="../assets/screen.svg" @click="doBrowserFullscreen" title="全屏"
-               style="display: inline-block; width: 30px; height: 30px; margin: 6px 0; padding: 4px; cursor: pointer;"/>
+               style="display: inline-block; width: 25px; height: 25px; margin: 8px 0; padding: 4px; cursor: pointer;"/>
         </div>
         <div>
           <el-dropdown trigger="hover" @command="handleCommandUser">
-            <img :src="userHeadPhoto"
-                 style="display: inline-block; width: 40px; height: 40px; margin: 5px 10px 5px 0; cursor: pointer; border-radius: 20px;"/>
+            <img :src="userHeadPhoto" class="user-photo-view"/>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item disabled>{{$store.getters.userName}}</el-dropdown-item>
               <el-dropdown-item icon="el-icon-s-custom" command="0">个人中心</el-dropdown-item>
@@ -323,11 +322,15 @@ export default {
       line-height: 40px;
 
       img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 5px 10px 5px 0;
+        cursor: pointer;
+        border-radius: 4px;
 
         &:hover {
           background-color: #efefef;
-          border-radius: 40px;
-          box-shadow: #fefefe 1px 1px 1px;
         }
       }
 
@@ -429,6 +432,17 @@ export default {
       font-size: 12px;
       color: #b4b4b4;
       margin-left: 8px;
+    }
+  }
+
+  .user-photo-view {
+    &:hover {
+      width: 36px;
+      height: 36px;
+      border-width: 2px;
+      border-color: #BEC9D6;
+      border-style: solid;
+      border-radius: 2px;
     }
   }
 </style>

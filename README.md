@@ -15,7 +15,10 @@
 后端地址 [oa-service](https://github.com/873764182/oa-service)  
 前端地址 [oa-client](https://github.com/873764182/oa-client)  
   
-在线预览 [http://oa.panxiong.net](http://oa.panxiong.net)
+### 示例程序
++  [在线预览](http://oa.lexiangwx.com)
++ 示例程序是部署好前后端的项目,默认用超级管理员登录
++ 会出现有两个人同时同账号登录的情况
 
 ### 项目目录结构
 ```
