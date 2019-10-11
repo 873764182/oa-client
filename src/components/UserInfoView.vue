@@ -1,9 +1,9 @@
 <template>
   <div style="position: relative;">
     <div class="user-info-item">
-      <section style="padding: 0">
+      <section style="padding: 0; height: 200px">
         <el-image
-          style="width: 100%; height: 160px; border-radius: 8px 8px 0 0; margin: 0;"
+          style="width: 100%; height: 200px; border-radius: 8px 8px 0 0; margin: 0;"
           src="/example.jpg"/>
       </section>
       <section style="margin-top: 32px" :title="userInfo.userId">
@@ -53,10 +53,10 @@
             </span>
       </section>
     </div>
-    <div style="position:absolute; top: 132px; left: 32px;" title="用户头像">
+    <div style="position:absolute; top: 165px; left: 32px;" title="用户头像">
       <img :src="userPhoto" class="user-photo"/>
     </div>
-    <div style="position:absolute; top: 165px; right: 32px;" title="用户名称">
+    <div style="position:absolute; top: 205px; right: 32px;" title="用户名称">
       <span style="color: #409EFF; font-size: 18px;">{{userInfo.username}}</span>
     </div>
   </div>
@@ -203,5 +203,15 @@ export default {
     height: 60px;
     border-radius: 30px;
     box-shadow: #cccccc 1px 1px 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #efefef;
+    cursor: pointer;
+
+    &:hover {
+      width: 58px;
+      height: 58px;
+      border-width: 2px;
+    }
   }
 </style>
