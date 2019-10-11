@@ -69,7 +69,7 @@ export default {
     return {
       apis: this.$route.meta.apis,
       username: 'admin',
-      password: '38180678',
+      password: '12345678',
       dialogCodeVisible: false
     }
   },

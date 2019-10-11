@@ -106,7 +106,7 @@
           </div>
         </el-tab-pane>
         <el-tab-pane name="permission">
-          <span slot="label"><i class="el-icon-connection"></i>&nbsp;权限管理</span>
+          <span slot="label"><i class="el-icon-connection"></i>&nbsp;权限配置</span>
           <div style="position: relative; height: 450px">
             <div>
               <div v-for="(role, index) in rolePerList" :key="index" class="role-per-item">
