@@ -47,8 +47,8 @@
                    circle @click="openMsgBox"/>
       </el-col>
     </el-row>
-    <el-dialog title="打开微信扫一扫" :visible.sync="dialogCodeVisible">
-      <img src="../assets/logo.png" style="width: 320px; height: 320px;"/>
+    <el-dialog title="打开微信扫一扫" :visible.sync="dialogCodeVisible" width="50%">
+      <img src="../assets/logo.png" style="width: 100%; height: 100%; max-width: 500px;"/>
     </el-dialog>
   </div>
 </template>
