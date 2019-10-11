@@ -1,0 +1,7 @@
+*.vue linguist-language=VUE
+*.html linguist-language=VUE
+*.js linguist-language=VUE
+*.xml linguist-language=VUE
+*.css linguist-language=VUE
+*.sql linguist-language=VUE
+*.json linguist-language=VUE
