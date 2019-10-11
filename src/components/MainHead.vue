@@ -331,6 +331,8 @@ export default {
 
         &:hover {
           background-color: #efefef;
+          box-shadow: #fefefe 1px 1px 1px;
+          border-radius: 2px;
         }
       }
 
@@ -349,6 +351,17 @@ export default {
         right: 120px;
         color: #999999;
       }
+    }
+  }
+
+  .user-photo-view {
+    &:hover {
+      width: 36px;
+      height: 36px;
+      border-width: 2px;
+      border-color: #BEC9D6;
+      border-style: solid;
+      border-radius: 2px;
     }
   }
 
@@ -432,17 +445,6 @@ export default {
       font-size: 12px;
       color: #b4b4b4;
       margin-left: 8px;
-    }
-  }
-
-  .user-photo-view {
-    &:hover {
-      width: 36px;
-      height: 36px;
-      border-width: 2px;
-      border-color: #BEC9D6;
-      border-style: solid;
-      border-radius: 2px;
     }
   }
 </style>
