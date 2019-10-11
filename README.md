@@ -4,17 +4,18 @@
 
 系统的UI大量的参考了VUE-Element-Admin的布局
 
-低侵入式的权限设计,对业务代码开发影响降到最低
+低侵入式/低污染的权限设计,对业务代码开发影响降到最低
 
-当前系统是一个基础框架系统,可以直接在此系统基础上直接开发你的业务
+当前系统是一个基础框架系统,可以在此系统基础上直接开发你的业务
 
 修改根目录下的vue.config.js中的代理远程地址到你部署好的后台程序地址即可运行
 ```
 
 ### 相关项目地址
-后端 [oa-service](https://github.com/873764182/oa-service)  
-前端 [oa-client](https://github.com/873764182/oa-client)  
-在线预览 [oa-client](https://github.com/873764182/oa-client)
+后端地址 [oa-service](https://github.com/873764182/oa-service)  
+前端地址 [oa-client](https://github.com/873764182/oa-client)  
+  
+在线预览 [http://oa.panxiong.net](http://oa.panxiong.net)
 
 ### 项目目录结构
 ```
